@@ -11,8 +11,10 @@
 }
 
 #footer {
-	border: solid;
-	/*height: 100px;*/
+	/*border: solid;*/
+	display: flex;
+	flex-direction: column;
+	border-top: 8px solid white;
 }
 #content {
 	border: solid;
@@ -60,7 +62,6 @@ div.secondRow{
 
 div.thirdRow{
 	/*border: 2px solid red;*/
-	/*background-color: #8DAFD3;*/
 	border-bottom: 4px solid white;
 }
 
@@ -88,4 +89,44 @@ div.thirdRow{
 
 div.thirdRow img {
 	width: 100%;
+}
+
+div.firstRowFooter {
+	display: flex;
+	flex-direction: row;
+	background-image: url(img/background/firstRow.avif);
+	background-size: 15% 150%;
+	color: white;
+	text-align: center;
+	font-family: arial;
+	/*border: solid aqua;*/
+	justify-content: space-evenly;
+
+}
+
+#telefono{
+	list-style-image: url(img/puntiLista/telefono.png);
+	/*list-style-position: inside;*/
+	padding-bottom: 5%;
+}
+
+#posizione{
+	list-style-image: url(img/puntiLista/posizione.png);
+	/*list-style-position: inside;*/
+	padding-bottom: 5%;
+}
+
+#mail{
+	list-style-image: url(img/puntiLista/mail.png);
+	/*list-style-position: inside;*/
+}
+
+div.secondRowFooter{
+	background-image: linear-gradient(to top left, #D2D2D2 0%, #0A0A0A 50%, #4CB7A5 100%);
+	border-top: 8px solid white;
+	color: white;
+	font-family: arial;
+	text-align: center;
+	font-size: 1.2em;
+	padding: 2%;	
 }
