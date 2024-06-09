@@ -21,23 +21,32 @@
 	/*border: solid;*/
 	display: flex;
 	flex: 1;
-	
+	background-image: linear-gradient(to top right, #FFFFFF 0%, #B2FFFF 50%, #23284F 100%);
+	padding: 1%;
 }
 
 #centralBox {
-	font-size: 3em;
-	border: solid;
+	font-size: 1.8em;
+	/*border: solid;*/
 	flex: 1;
-	padding: 5px;
+	padding: 0 10px;
 }
 
 #leftBox {
 	order: -1;
+	flex-basis: 20%;
 }
 
-#leftBox, #rightBox {
-	/*border: solid;*/
+/*#leftBox, #rightBox {
+	/*border: solid;
 	flex-basis: 20%; 
+}*/
+
+#rightBox {
+	display: flex;
+	flex-basis: 20%;
+	flex-direction: column; 
+	justify-content: space-evenly;
 }
 
 /* header */
@@ -177,4 +186,20 @@
 #menu li a:active {
 	background-color: #100303;
 	color: white;
+}
+
+/* eventuali css centralBox */
+
+
+/* rightBox */
+#rightBox img{
+	width: 100%;
+	border: solid white;
+	border-radius: 50px;
+}
+
+.caption {
+	/*border: solid;*/
+	margin:0;
+	text-align: center;	
 }
