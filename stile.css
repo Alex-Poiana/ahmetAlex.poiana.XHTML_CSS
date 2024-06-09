@@ -1,3 +1,4 @@
+/* "holy grail" layout */
 #container {
 	margin: 0;
 	display: flex;
@@ -17,7 +18,7 @@
 	border-top: 8px solid white;
 }
 #content {
-	border: solid;
+	/*border: solid;*/
 	display: flex;
 	flex: 1;
 	
@@ -35,12 +36,12 @@
 }
 
 #leftBox, #rightBox {
-	border: solid;
+	/*border: solid;*/
 	flex-basis: 20%; 
 }
 
-
-div.firstRow{
+/* header */
+#firstRowHeader{
 	display: flex;
 	/*border: solid pink;*/
 	justify-content: space-between;
@@ -50,28 +51,26 @@ div.firstRow{
 	background-size: 15% 150%;			/*secondo modo*/
 }
 
-div.secondRow{
+#secondRowHeader{
 	display: flex;
 	border-top: 8px solid white;
 	border-bottom: 8px solid white;
 	/*border: 2px solid green;*/
-	background-image: linear-gradient(to top right, #FFFFFF 0%, #B2FFFF 50%, #23284F 100%);
+	/*background-image: linear-gradient(to top right, #FFFFFF 0%, #B2FFFF 50%, #23284F 100%);*/
+	background-image: linear-gradient(to top left, #D2D2D2 0%, #0A0A0A 50%, #4CB7A5 100%);
 	justify-content: center;	
 }
 
 
-div.thirdRow{
+#thirdRowHeader{
 	/*border: 2px solid red;*/
 	border-bottom: 4px solid white;
 }
-
+ 
+/* firstRowHeader element */
 #login{
 	font-size: 1.5em;
 	margin-right: 3%;
-}
-
-.social {
-	margin: 1%;	
 }
 
 #login a:link {
@@ -87,11 +86,18 @@ div.thirdRow{
 	padding: 10%;
 }
 
-div.thirdRow img {
+/* secondRowHeader element */
+.social {
+	margin: 1%;	
+}
+
+/* thirdRowHeader element */
+#thirdRowHeader img {
 	width: 100%;
 }
 
-div.firstRowFooter {
+/* footer */
+#firstRowFooter {
 	display: flex;
 	flex-direction: row;
 	background-image: url(img/background/firstRow.avif);
@@ -101,9 +107,20 @@ div.firstRowFooter {
 	font-family: arial;
 	/*border: solid aqua;*/
 	justify-content: space-evenly;
-
 }
 
+#secondRowFooter{
+	background-image: linear-gradient(to top left, #D2D2D2 0%, #0A0A0A 50%, #4CB7A5 100%);
+	border-top: 8px solid white;
+	color: white;
+	font-family: arial;
+	text-align: center;
+	font-size: 1.2em;
+	padding: 2%;	
+}
+
+
+/* firstRowFooter elements */
 #telefono{
 	list-style-image: url(img/puntiLista/telefono.png);
 	/*list-style-position: inside;*/
@@ -121,12 +138,43 @@ div.firstRowFooter {
 	/*list-style-position: inside;*/
 }
 
-div.secondRowFooter{
-	background-image: linear-gradient(to top left, #D2D2D2 0%, #0A0A0A 50%, #4CB7A5 100%);
-	border-top: 8px solid white;
+
+
+/* menu*/
+#menu {
+	/*border: 1px solid black;*/
+	/*font-size: 3em; */
+	position: sticky;
+	top: 0;
+}
+
+#menu ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+#menu ul li {
+	border-bottom: 2px solid white;
+}
+
+#menu li a:link, #menu li a:visited {
+	font-size: 160%;
+	display: block;
+	padding: 0.4em 0 1em 0.5em;
+	border-left: 12px solid black;
+	border-right: 5px solid black;
+	background-color: #00AAE4;
 	color: white;
-	font-family: arial;
-	text-align: center;
-	font-size: 1.2em;
-	padding: 2%;	
+	text-decoration: none;
+}
+
+#menu li a:hover {
+	background-color: #2595AB;
+	color: white;
+}
+
+#menu li a:active {
+	background-color: #100303;
+	color: white;
 }
