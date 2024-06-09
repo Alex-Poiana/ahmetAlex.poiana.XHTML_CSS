@@ -189,7 +189,15 @@
 }
 
 /* eventuali css centralBox */
+#loginAlternativo a:link, a:visited {
+	color: fuchsia;
+	text-decoration: none;
+	
+}
 
+#loginAlternativo a:hover {
+	text-decoration: underline;
+}
 
 /* rightBox */
 #rightBox img{
@@ -203,3 +211,4 @@
 	margin:0;
 	text-align: center;	
 }
+
