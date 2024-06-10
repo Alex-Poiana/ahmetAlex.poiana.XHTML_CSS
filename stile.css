@@ -199,6 +199,12 @@
 	text-decoration: underline;
 }
 
+
+#centralBox hr {
+	height: 5px;
+	background-color: fuchsia;
+}
+
 /* rightBox */
 #rightBox img{
 	width: 100%;
