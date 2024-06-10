@@ -37,11 +37,6 @@
 	flex-basis: 20%;
 }
 
-/*#leftBox, #rightBox {
-	/*border: solid;
-	flex-basis: 20%; 
-}*/
-
 #rightBox {
 	display: flex;
 	flex-basis: 20%;
@@ -65,18 +60,16 @@
 	border-top: 8px solid white;
 	border-bottom: 8px solid white;
 	/*border: 2px solid green;*/
-	/*background-image: linear-gradient(to top right, #FFFFFF 0%, #B2FFFF 50%, #23284F 100%);*/
 	background-image: linear-gradient(to top left, #D2D2D2 0%, #0A0A0A 50%, #4CB7A5 100%);
 	justify-content: center;	
 }
-
 
 #thirdRowHeader{
 	/*border: 2px solid red;*/
 	border-bottom: 4px solid white;
 }
  
-/* firstRowHeader element */
+/* firstRowHeader elements */
 #login{
 	font-size: 1.5em;
 	margin-right: 3%;
@@ -132,19 +125,16 @@
 /* firstRowFooter elements */
 #telefono{
 	list-style-image: url(img/puntiLista/telefono.png);
-	/*list-style-position: inside;*/
 	padding-bottom: 5%;
 }
 
 #posizione{
 	list-style-image: url(img/puntiLista/posizione.png);
-	/*list-style-position: inside;*/
 	padding-bottom: 5%;
 }
 
 #mail{
 	list-style-image: url(img/puntiLista/mail.png);
-	/*list-style-position: inside;*/
 }
 
 
@@ -152,7 +142,6 @@
 /* menu*/
 #menu {
 	/*border: 1px solid black;*/
-	/*font-size: 3em; */
 	position: sticky;
 	top: 0;
 }
@@ -199,6 +188,9 @@
 	text-decoration: underline;
 }
 
+#centralBox h3 {
+	text-decoration: underline #00AAE4;
+}
 
 #centralBox hr {
 	height: 5px;
