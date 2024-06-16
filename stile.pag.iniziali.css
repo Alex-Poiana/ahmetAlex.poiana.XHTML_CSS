@@ -48,6 +48,7 @@
 #firstRowHeader{
 	display: flex;
 	/*border: solid pink;*/
+	border-bottom: 8px solid white;
 	justify-content: space-between;
 	align-items: center;
 	background-image: url(img/background/firstRow.avif);
@@ -57,7 +58,6 @@
 
 #secondRowHeader{
 	display: flex;
-	border-top: 8px solid white;
 	border-bottom: 8px solid white;
 	/*border: 2px solid green;*/
 	background-image: linear-gradient(to top left, #D2D2D2 0%, #0A0A0A 50%, #4CB7A5 100%);
